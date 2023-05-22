@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpaceProgramme", "Task1\SpaceProgramme.csproj", "{DC46A959-86EB-4BC0-8C07-6DB2A1041B6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceProgramme.Tests", "SpaceProgramme.Tests\SpaceProgramme.Tests.csproj", "{01E68703-7FBC-45BE-95E3-B6BDE97E4FCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC46A959-86EB-4BC0-8C07-6DB2A1041B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC46A959-86EB-4BC0-8C07-6DB2A1041B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC46A959-86EB-4BC0-8C07-6DB2A1041B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC46A959-86EB-4BC0-8C07-6DB2A1041B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E68703-7FBC-45BE-95E3-B6BDE97E4FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E68703-7FBC-45BE-95E3-B6BDE97E4FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E68703-7FBC-45BE-95E3-B6BDE97E4FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E68703-7FBC-45BE-95E3-B6BDE97E4FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79C3F76E-3EE8-452E-85CF-114DDB5FC232}
+	EndGlobalSection
+EndGlobal
