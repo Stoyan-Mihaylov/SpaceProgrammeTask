@@ -28,7 +28,7 @@ namespace SpaceProgramme.Tests
             });
         }
 
-        [TestCase(new object[] { "C:\\Users\\admin\\Desktop\\InputFiles.csv", "stoyan.mihaylov950907@gmail.com", "mvgzampnvbwrsxcf", "stoyan.mihaylov950907@gmail.com" })]
+        [TestCase(new object[] { "C:\\Users\\admin\\Desktop\\InputFiles.csv", "stoyan.mihaylov950907@gmail.com", "", "stoyan.mihaylov950907@gmail.com" })]
         public void IfGivenFileDoesntExistShouldThrowAnFileNotFoundException(params string[] arguments)
         {
             Assert.Throws<FileIsNotFoundException>(() =>
@@ -37,7 +37,7 @@ namespace SpaceProgramme.Tests
             });
         }
 
-        [TestCase(new object[] { "C:\\Users\\admin\\Desktop\\TestFile.csv", "stoyan.mihaylov950907@gmail.com", "mvgzampnvbwrsxcf", "stoyan.mihaylov950907@gmail.com" })]
+        [TestCase(new object[] { "C:\\Users\\admin\\Desktop\\TestFile.csv", "stoyan.mihaylov950907@gmail.com", "", "stoyan.mihaylov950907@gmail.com" })]
         public void IfBestDayIsNullShouldThrowAnBestDayForLaunchIsNullException(params string[] arguments)
         {
             Assert.Throws<BestDayForLaunchIsNullException>(() =>
@@ -50,7 +50,7 @@ namespace SpaceProgramme.Tests
         public void IfEmailIsSendMethodTrySendEmailShouldReturnTrue()
         {
             string fromEmail = "stoyan.mihaylov950907@gmail.com";
-            string fromPassword = "mvgzampnvbwrsxcf";
+            string fromPassword = "";
             string toEmail = "stoyan.mihaylov950907@gmail.com";
             string attachmentPath = "./WeatherReport.csv";
 
