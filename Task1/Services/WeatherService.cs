@@ -13,7 +13,7 @@ namespace SpaceProgramme.Services
             var daysMap = new Dictionary<int, WeatherData>();
             using var reader = new StreamReader(fileName);
 
-            var header = reader.ReadLine().Split(',');
+            var header = reader.ReadLine().Split(',', StringSplitOptions.RemoveEmptyEntries);
 
             for (int i = 1; i < header.Length; i++)
             {
@@ -23,7 +23,7 @@ namespace SpaceProgramme.Services
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                var split = line.Split(',');
+                var split = line.Split(',', StringSplitOptions.RemoveEmptyEntries);
                 var parameter = split[0];
 
                 for (int i = 1; i < split.Length; i++)
